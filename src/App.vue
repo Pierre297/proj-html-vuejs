@@ -1,32 +1,22 @@
 <template>
   <div id="app">
-    <!-- HEADER -->
-    <header>
-      <Navbar />
-      <Jumbotron />
-      <Menu />
-    </header>
-    <!-- MAIN -->
-    <main></main>
-    <!-- FOOTER -->
-    <footer></footer>
+    <Header />
+    <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
-// import header
-import Navbar from "./components/Navbar.vue";
-import Jumbotron from "./components/Jumbotron.vue";
-import Menu from "./components/Menu.vue";
-// import main
-// import footer
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar,
-    Jumbotron,
-    Menu,
+    Header,
+    Main,
+    Footer,
   },
 };
 </script>
