@@ -30,12 +30,22 @@
       </div>
     </div>
     <div class="yellow-container">
-      <span id="yellow-title"
-        >Do You Have A Construction Project We Can Help With?</span
-      >
+      <div id="yellow-title">
+        Do You Have A Construction Project We Can Help With?
+      </div>
     </div>
     <!-- MENU -->
-    <div></div>
+    <div class="menu-container">
+      <button class="btn-free-quote"><a href="#">GET A FREE QUOTE</a></button>
+      <h4>Specialists In Modern Constructions</h4>
+      <div class="line"></div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati
+        ex quas, non veritatis provident soluta iure fuga, culpa molestias,
+        debitis optio vel ipsa.
+      </p>
+      <!-- card -->
+    </div>
   </header>
 </template>
 
@@ -53,7 +63,7 @@ nav {
   width: 90%;
   margin-left: 5%;
   text-align: center;
-  height: 135px;
+  height: 115px;
 }
 ul {
   display: inline-block;
@@ -173,6 +183,34 @@ h2 {
 
 #yellow-title {
   font-size: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
+}
+
+// MENU
+
+.btn-free-quote {
+  background-color: #333333;
+  border: 1px solid white;
+  margin-top: -20px;
+
+  a {
+    color: white;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 19px;
+  }
+}
+
+h4 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+  width: 60%;
+  margin-left: 20%;
 }
 </style>
