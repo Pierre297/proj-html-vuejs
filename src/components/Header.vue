@@ -45,13 +45,50 @@
         debitis optio vel ipsa.
       </p>
       <!-- card -->
+      <div class="construction-card">
+        <ModernConstructionCard
+          v-for="(service, i) in services"
+          :key="i"
+          :menu="service"
+        />
+      </div>
     </div>
   </header>
 </template>
 
 <script>
+import ModernConstructionCard from "./ModernConstructionCard.vue";
 export default {
   name: "Header",
+  components: {
+    ModernConstructionCard,
+  },
+  data() {
+    return {
+      services: [
+        {
+          thumb: "",
+          title: "Buildings",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
+        },
+        {
+          thumb: "",
+          title: "Renovate",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
+        },
+        {
+          thumb: "",
+          title: "Construct",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
+        },
+        {
+          thumb: "",
+          title: "Exclusive",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -212,5 +249,14 @@ p {
   font-size: 20px;
   width: 60%;
   margin-left: 20%;
+}
+
+.construction-card {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
 }
 </style>
