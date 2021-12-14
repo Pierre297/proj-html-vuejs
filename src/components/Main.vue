@@ -56,7 +56,20 @@
       <b>HARRY SMITH NEW HOME OWNER</b>
     </div>
     <!-- NEWS -->
-    <div></div>
+    <div class="latest-news">
+      <h3>Latest News</h3>
+      <div class="line"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        minus eos neque, amet odit suscipit earum minima nisi aut enim beatae
+        expedita officiis repudiandae atque, nulla vel dolorum molestiae nam?
+      </p>
+      <NewsCard
+        v-for="(article, fourkey) in articles"
+        :key="fourkey"
+        :new="article"
+      />
+    </div>
   </main>
 </template>
 
@@ -64,6 +77,7 @@
 import InfoCard from "./InfoCard.vue";
 import RecentWork from "./RecentWork.vue";
 import CoreValue from "./CoreValue.vue";
+import NewsCard from "./NewsCard.vue";
 
 export default {
   name: "Main",
@@ -71,6 +85,7 @@ export default {
     InfoCard,
     RecentWork,
     CoreValue,
+    NewsCard,
   },
   data() {
     return {
@@ -134,6 +149,26 @@ export default {
           image: "",
           title: "Creative Solutions",
           text: "Neque porro quisiquam est, qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velid, seid quas",
+        },
+      ],
+      articles: [
+        {
+          image: "",
+          title: "Redeveloping Florida's Remote Southen Coast",
+          date: "December 7th, 2015",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat ea enim itaque eaque obcaeca sit ut exercitationem minima fugiat cumque, deleniti similique? Aliquam deleniti",
+        },
+        {
+          image: "",
+          title: "How We Manage Large Construction Projects",
+          date: "December 7th, 2015",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat ea enim itaque eaque obcaeca sit ut exercitationem minima fugiat cumque, deleniti similique? Aliquam deleniti",
+        },
+        {
+          image: "",
+          title: "Future Proofing a Modern Home",
+          date: "December 6th, 2015",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat ea enim itaque eaque obcaeca sit ut exercitationem minima fugiat cumque, deleniti similique? Aliquam deleniti",
         },
       ],
     };
@@ -222,5 +257,20 @@ export default {
 
 .profile-picture {
   border-radius: 50%;
+}
+
+// LATEST NEWS
+.latest-news {
+  background-color: #f5f5f5;
+
+  h3 {
+    padding-top: 100px;
+  }
+  p {
+    width: 40%;
+    margin-left: 30%;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
 }
 </style>
