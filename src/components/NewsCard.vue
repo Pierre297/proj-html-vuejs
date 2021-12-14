@@ -2,10 +2,10 @@
   <div>
     <div class="news-card">
       <img src="" alt="" />
-      <span></span>
-      <p class="date"></p>
+      <span>{{ news.title }}</span>
+      <p class="date">{{ news.date }}</p>
       <div class="line"></div>
-      <p></p>
+      <p class="text">{{ news.text }}</p>
     </div>
   </div>
 </template>
@@ -14,10 +14,32 @@
 export default {
   name: "NewsCard",
   props: {
-    new: Object,
+    news: Object,
   },
 };
 </script>
 
 <style scoped lang="scss">
+.news-card {
+  margin: 0px 40px;
+  margin-top: 100px;
+  width: 300px;
+  background-color: white;
+  height: 400px;
+}
+.line {
+  border: solid 1px #eae8e8;
+  width: 80%;
+  margin-left: 45%;
+  margin: 20px auto;
+}
+.text {
+  font-size: 15px;
+  line-height: 30px;
+}
+.date {
+  font-size: 12px;
+  color: gray;
+  margin-top: 15px;
+}
 </style>

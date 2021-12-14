@@ -53,7 +53,7 @@
         officiis cupiditate fugiat cumque, deleniti similique? Aliquam deleniti
         necessitatibus repudiandae at.
       </p>
-      <b>HARRY SMITH NEW HOME OWNER</b>
+      <b>HARRY SMITH &#8226; NEW HOME OWNER</b>
     </div>
     <!-- NEWS -->
     <div class="latest-news">
@@ -64,11 +64,13 @@
         minus eos neque, amet odit suscipit earum minima nisi aut enim beatae
         expedita officiis repudiandae atque, nulla vel dolorum molestiae nam?
       </p>
-      <NewsCard
-        v-for="(article, fourkey) in articles"
-        :key="fourkey"
-        :new="article"
-      />
+      <div class="news-container">
+        <NewsCard
+          v-for="(article, fourthkey) in articles"
+          :key="fourthkey"
+          :news="article"
+        />
+      </div>
     </div>
   </main>
 </template>
@@ -272,5 +274,11 @@ export default {
     line-height: 30px;
     margin-bottom: 50px;
   }
+}
+.news-container {
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
