@@ -35,4 +35,8 @@ export default {
 h3 {
   margin: 25px 0;
 }
+
+p {
+  color: #a0a0a0;
+}
 </style>
