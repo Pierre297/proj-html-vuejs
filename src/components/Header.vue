@@ -259,4 +259,10 @@ p {
   width: 80%;
   margin-left: 10%;
 }
+.line {
+  border: 1px solid #fed03d;
+  margin: 40px 0px;
+  width: 20%;
+  margin-left: 40%;
+}
 </style>
