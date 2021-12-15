@@ -1,7 +1,7 @@
 <template>
   <div class="info-card">
     <div class="">
-      <img src="" alt="" />
+      <i :class="info.class"></i>
       <h3>{{ info.number }}</h3>
       <p>{{ info.role }}</p>
     </div>
@@ -21,7 +21,11 @@ export default {
 .info-card {
   margin: 40px;
   font-size: 20px;
-  margin-top: 260px;
+  margin-top: 220px;
+}
+i {
+  color: #fed03d;
+  font-size: 60px;
 }
 h3 {
   color: #fed03d;

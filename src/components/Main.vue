@@ -95,22 +95,22 @@ export default {
     return {
       infos: [
         {
-          thumb: "",
+          class: "fas fa-suitcase",
           number: "3534",
           role: "PLANNING APPLICATIONS",
         },
         {
-          thumb: "",
+          class: "far fa-building",
           number: "896",
           role: "COMPLETED PROJECTS",
         },
         {
-          thumb: "",
+          class: "fas fa-users",
           number: "172",
           role: "TRAINED PROFESSIONALS",
         },
         {
-          thumb: "",
+          class: "fas fa-globe",
           number: "19",
           role: "INTERNATIONALS OFFICES",
         },

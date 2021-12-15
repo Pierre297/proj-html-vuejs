@@ -1,7 +1,9 @@
 <template>
   <div class="card">
     <div class="service-list">
-      <i :class="menu.class"></i>
+      <div class="circle">
+        <i :class="menu.class"></i>
+      </div>
       <h3>{{ menu.title }}</h3>
       <p>{{ menu.text }}</p>
     </div>
@@ -30,6 +32,20 @@ export default {
   background-color: #f5f5f5;
   height: 300px;
   border-radius: 10px;
+}
+.circle {
+  border: 1px solid #747474;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 38%;
+  margin-top: 20px;
+}
+
+i {
+  font-size: 35px;
+  margin-top: 20px;
+  color: #747474;
 }
 
 h3 {
