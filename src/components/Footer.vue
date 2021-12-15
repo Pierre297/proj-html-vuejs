@@ -17,7 +17,20 @@
       />
     </div>
     <!-- FREE QUOTE -->
-    <div></div>
+    <div class="free-quote-container">
+      <div class="left-col">
+        <h3>Building Inspiring Spaces</h3>
+        <div class="secondline"></div>
+        <p>
+          quaerat suscipit, voluptatem beatae expedita numquam vitae corrupti
+          labore aspernatur dolorem reprehenderit ullam?
+        </p>
+      </div>
+      <div>
+        <button><a href="#">GET A FREE QUOTE</a></button>
+        <p class="buttontext">Only takes a few seconds!</p>
+      </div>
+    </div>
     <!-- CONTACT & INFO -->
     <div></div>
   </footer>
@@ -56,6 +69,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// PARTNERS
 .partner-container {
   margin-top: 30px;
 
@@ -74,5 +88,60 @@ export default {
   margin: 60px 0px;
   width: 10%;
   margin-left: 45%;
+}
+// FREE QUOTE
+.left-col {
+  margin-left: 200px;
+}
+.free-quote-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 350px;
+  background-image: url("../assets/about-call-to-action-57862405.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  text-align: start;
+
+  h3 {
+    color: white;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-right: 300px;
+  }
+  .secondline {
+    border: 1px solid #fed03d;
+    margin: 40px 0px;
+    width: 40%;
+    margin-left: 0;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+    width: 600px;
+  }
+  button {
+    background-color: #fed03d;
+    color: #534c35;
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin: 150px 0 20px 40px;
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+  button:hover {
+    background-color: #333333;
+    cursor: pointer;
+  }
+  button:hover a {
+    color: white;
+  }
+  .buttontext {
+    margin-left: 40px;
+  }
 }
 </style>
