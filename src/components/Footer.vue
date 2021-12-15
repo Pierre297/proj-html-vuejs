@@ -119,12 +119,12 @@ export default {
         {
           profilepic: "3a74ce3d0532b7773b174c45ca3bd05a_bigger.png",
           username: "ThemeFusion",
-          logo: "",
+          logo: "image (1).svg",
           text: "Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, & launch your site in seconds with #avanda on WP engine hosting & get 30% off this Black Friday bit.Ly/randomlink2020 ",
           img: "En2TRxLW4AEiWUN.jpeg",
-          like: "",
-          share: "",
-          data: "",
+          like: "image (2).svg",
+          share: "image (3).svg",
+          data: "22h ago",
         },
       ],
     };

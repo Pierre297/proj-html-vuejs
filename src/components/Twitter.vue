@@ -5,14 +5,17 @@
       :src="require('../assets/' + tweet.profilepic)"
       alt=""
     />
-    <strong>{{ tweet.username }}</strong>
-    <img class="logo" src="" alt="" />
-    <em>@{{ tweet.username }}</em>
+    <div class="name">
+      <strong>{{ tweet.username }}</strong>
+      <em>@{{ tweet.username }}</em>
+    </div>
+    <img class="logo" :src="require('../assets/' + tweet.logo)" alt="" />
+
     <p>{{ tweet.text }}</p>
     <img :src="require('../assets/' + tweet.img)" alt="" class="img-tweet" />
-    <img src="" alt="" class="like" />
-    <img src="" alt="" class="share" />
-    <span>{{ tweet.data }}</span>
+    <img :src="require('../assets/' + tweet.like)" alt="" class="like" />
+    <img :src="require('../assets/' + tweet.share)" alt="" class="share" />
+    <span class="data">{{ tweet.data }}</span>
   </div>
 </template>
 
@@ -44,5 +47,16 @@ export default {
     width: 30px;
     margin: 0px 10px;
   }
+  .logo {
+    width: 30px;
+    margin-left: 190px;
+  }
+  .name {
+    display: inline-block;
+  }
+}
+.data {
+  margin-left: 290px;
+  font-size: 15px;
 }
 </style>
