@@ -22,10 +22,10 @@ export default {
 <style scoped lang="scss">
 .news-card {
   margin: 0px 40px;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 300px;
   background-color: white;
-  height: 600px;
+  height: 500px;
 }
 .line {
   border: solid 1px #eae8e8;

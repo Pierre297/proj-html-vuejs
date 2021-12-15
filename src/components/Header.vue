@@ -94,6 +94,9 @@ export default {
 
 <style scoped lang="scss">
 // NAVBAR
+img {
+  margin-top: 10px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -108,6 +111,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 li {

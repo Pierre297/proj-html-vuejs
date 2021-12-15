@@ -135,22 +135,26 @@ export default {
       ],
       cores: [
         {
-          image: "",
+          color: "lightblue",
+          class: "fas fa-home",
           title: "Great Services",
           text: "Neque porro quisiquam est, qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velid, seid quas",
         },
         {
-          image: "",
+          color: "blue",
+          class: "fas fa-cog",
           title: "Highest Standard",
           text: "Neque porro quisiquam est, qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velid, seid quas",
         },
         {
-          image: "",
+          color: "orange",
+          class: "fas fa-users",
           title: "Professional Team",
           text: "Neque porro quisiquam est, qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velid, seid quas",
         },
         {
-          image: "",
+          color: "green",
+          class: "far fa-lightbulb",
           title: "Creative Solutions",
           text: "Neque porro quisiquam est, qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velid, seid quas",
         },
@@ -273,6 +277,7 @@ export default {
 // LATEST NEWS
 .latest-news {
   background-color: #f5f5f5;
+  height: 1000px;
 
   h3 {
     padding-top: 100px;
