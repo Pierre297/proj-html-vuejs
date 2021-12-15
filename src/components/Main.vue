@@ -14,11 +14,13 @@
         facilis quasi, vitae tenetur, minima iste? Nihil ab quisquam autem?
       </p>
       <!-- card -->
-      <RecentWork
-        v-for="(work, secondkey) in works"
-        :key="secondkey"
-        :work="work"
-      />
+      <div class="work-card">
+        <RecentWork
+          v-for="(work, secondkey) in works"
+          :key="secondkey"
+          :work="work"
+        />
+      </div>
     </div>
     <!-- CORE VALUES -->
     <div class="core-container">
@@ -116,17 +118,17 @@ export default {
 
       works: [
         {
-          image: "../assets/project2-featured-15013609.jpg",
+          image: "project2-featured-15013609.jpg",
           title: "Florida Health Facility",
           role: "Commercial",
         },
         {
-          image: "../assets/project1-featured-294276386.jpg",
+          image: "project1-featured-294276386.jpg",
           title: "Florida Health Facility",
           role: "Commercial",
         },
         {
-          image: "../assets/project3-featured-189023420.jpg",
+          image: "project3-featured-189023420.jpg",
           title: "Florida Health Facility",
           role: "Commercial",
         },
@@ -155,19 +157,19 @@ export default {
       ],
       articles: [
         {
-          image: "",
+          img: "blog-post-134132600.jpg",
           title: "Redeveloping Florida's Remote Southen Coast",
           date: "December 7th, 2015",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat ea enim itaque eaque obcaeca sit ut exercitationem minima fugiat cumque, deleniti similique? Aliquam deleniti",
         },
         {
-          image: "",
+          img: "blog-post-92486644.jpg",
           title: "How We Manage Large Construction Projects",
           date: "December 7th, 2015",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat ea enim itaque eaque obcaeca sit ut exercitationem minima fugiat cumque, deleniti similique? Aliquam deleniti",
         },
         {
-          image: "",
+          img: "blog-post-332773904.jpg",
           title: "Future Proofing a Modern Home",
           date: "December 6th, 2015",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat ea enim itaque eaque obcaeca sit ut exercitationem minima fugiat cumque, deleniti similique? Aliquam deleniti",
@@ -201,6 +203,14 @@ export default {
     line-height: 35px;
   }
 }
+.work-card {
+  width: 60%;
+  margin-left: 15%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .line {
   border: 1px solid #fed03d;
   margin: 60px 0px;
@@ -233,7 +243,6 @@ export default {
 // REVIEW
 .review-container {
   background-image: url("../assets/home-parallax-144609983.jpg");
-  background-size: 1600px;
   height: 700px;
 
   h4 {
@@ -267,12 +276,12 @@ export default {
 
   h3 {
     padding-top: 100px;
+    font-size: 30px;
   }
   p {
     width: 40%;
     margin-left: 30%;
     line-height: 30px;
-    margin-bottom: 50px;
   }
 }
 .news-container {

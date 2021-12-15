@@ -67,22 +67,22 @@ export default {
     return {
       services: [
         {
-          thumb: "",
+          class: "far fa-building",
           title: "Buildings",
           text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
         },
         {
-          thumb: "",
+          class: "fas fa-sync",
           title: "Renovate",
           text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
         },
         {
-          thumb: "",
+          class: "fas fa-home",
           title: "Construct",
           text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
         },
         {
-          thumb: "",
+          class: "fas fa-truck",
           title: "Exclusive",
           text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum obcaecati provident soluta iure fuga, culpa ",
         },

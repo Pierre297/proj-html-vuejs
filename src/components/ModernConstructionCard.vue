@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="service-list">
-      <img src="" alt="" />
+      <i :class="menu.class"></i>
       <h3>{{ menu.title }}</h3>
       <p>{{ menu.text }}</p>
     </div>

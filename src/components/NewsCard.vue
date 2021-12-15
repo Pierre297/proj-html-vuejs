@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="news-card">
-      <img src="" alt="" />
+      <img :src="require('../assets/' + news.img)" alt="" />
       <span>{{ news.title }}</span>
       <p class="date">{{ news.date }}</p>
       <div class="line"></div>
@@ -25,7 +25,7 @@ export default {
   margin-top: 100px;
   width: 300px;
   background-color: white;
-  height: 400px;
+  height: 600px;
 }
 .line {
   border: solid 1px #eae8e8;
@@ -41,5 +41,8 @@ export default {
   font-size: 12px;
   color: gray;
   margin-top: 15px;
+}
+img {
+  width: 300px;
 }
 </style>
