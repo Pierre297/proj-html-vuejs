@@ -190,6 +190,7 @@ export default {
   margin-top: 60px;
   height: 550px;
   background-image: url("../assets/home-244125289.jpg");
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

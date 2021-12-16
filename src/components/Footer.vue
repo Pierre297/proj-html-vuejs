@@ -78,8 +78,9 @@
         </ul>
       </div>
       <!-- find us -->
-      <div>
+      <div class="googlemap">
         <h3>FIND US</h3>
+        <Map />
       </div>
     </div>
   </footer>
@@ -88,12 +89,14 @@
 <script>
 import Partnership from "./Partnership.vue";
 import Twitter from "./Twitter.vue";
+import Map from "./Map.vue";
 
 export default {
   name: "Footer",
   components: {
     Partnership,
     Twitter,
+    Map,
   },
   data() {
     return {
@@ -277,5 +280,11 @@ export default {
       margin: 10px;
     }
   }
+}
+
+// map
+.googlemap {
+  margin-right: 40px;
+  width: 450px;
 }
 </style>
