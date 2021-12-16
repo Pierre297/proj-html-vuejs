@@ -1,7 +1,7 @@
 <template>
   <div class="card-value">
     <div>
-      <div :class="value.color">
+      <div :class="value.color" class="colorhover">
         <i :class="value.class"></i>
       </div>
       <h4>{{ value.title }}</h4>
@@ -70,5 +70,10 @@ i {
   height: 100px;
   margin-left: 27%;
   margin-bottom: 25px;
+}
+
+.colorhover:hover {
+  background-color: #fed03d;
+  cursor: pointer;
 }
 </style>
