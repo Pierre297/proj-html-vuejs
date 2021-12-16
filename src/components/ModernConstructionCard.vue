@@ -6,6 +6,15 @@
       </div>
       <h3>{{ menu.title }}</h3>
       <p>{{ menu.text }}</p>
+      <!-- card hover -->
+      <div class="overlay text">
+        <h3>ARTFULLY CRAFTED</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum
+          fugiat maxime laudantium perferendis consequatur eligendi corrupt
+        </p>
+        <button><a href="#">GET A QUOTE</a></button>
+      </div>
     </div>
   </div>
 </template>
@@ -32,6 +41,7 @@ export default {
   background-color: #f5f5f5;
   height: 300px;
   border-radius: 10px;
+  position: relative;
 }
 .circle {
   border: 1px solid #747474;
@@ -54,5 +64,54 @@ h3 {
 
 p {
   color: #a0a0a0;
+}
+// display testo hover
+.overlay {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fed03d;
+}
+
+.service-list:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  color: #1e1e1e;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  p {
+    color: #1e1e1e;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+  h3 {
+    padding-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  button {
+    width: 140px;
+    height: 50px;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 </style>

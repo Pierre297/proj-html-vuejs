@@ -210,7 +210,7 @@ export default {
 }
 .work-card {
   width: 60%;
-  margin-left: 15%;
+  margin-left: 20%;
   height: 550px;
   display: flex;
   flex-wrap: wrap;

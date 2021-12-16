@@ -187,10 +187,6 @@ h2 {
     text-decoration: none;
     font-size: 19px;
   }
-
-  a:hover {
-    color: #f7ca3b;
-  }
 }
 .button-quote {
   height: 55px;
@@ -210,11 +206,19 @@ h2 {
 }
 
 .button-work:hover {
-  background-color: #333333;
+  background-color: #fed03d;
+
+  a {
+    color: #333333;
+  }
 }
 
 .button-quote:hover {
   background-color: #333333;
+
+  a {
+    color: white;
+  }
 }
 
 .yellow-container {
@@ -240,6 +244,15 @@ h2 {
     padding: 8px;
     text-decoration: none;
     font-size: 19px;
+  }
+}
+
+.btn-free-quote:hover {
+  background-color: white;
+  border: 1px solid black;
+
+  a {
+    color: black;
   }
 }
 
